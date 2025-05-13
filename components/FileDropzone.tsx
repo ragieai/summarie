@@ -48,7 +48,13 @@ export function FileDropzone() {
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles.length > 0) {
-      setFile(acceptedFiles[0])
+      const file = acceptedFiles[0]
+      // Check if file size is less than 200MB (200 * 1024 * 1024 bytes)
+      if (file.size > 200 * 1024 * 1024) {
+        toast.error('File size must be less than 200MB')
+        return
+      }
+      setFile(file)
     }
   }, [])
 

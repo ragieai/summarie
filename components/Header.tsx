@@ -32,9 +32,9 @@ export function Header() {
           <Image
             src="/ragie-logo.svg"
             alt="Ragie"
-            width={80}
-            height={80}
-            className="h-6 w-6 brightness-0"
+            width={72}
+            height={72}
+            className="brightness-0"
           />
         </a>
       </div>

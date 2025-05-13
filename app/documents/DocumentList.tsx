@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useRouter } from 'next/navigation';
+import { Loader2 } from 'lucide-react';
 
 interface Document {
   id: string;
@@ -78,7 +79,11 @@ export default function DocumentList() {
   };
 
   if (loading && documents.length === 0) {
-    return <div className="text-center">Loading...</div>;
+    return (
+      <div className="text-center flex flex-col items-center h-screen">
+        <Loader2 className="w-6 h-6 mt-4 animate-spin" />
+      </div>
+    );
   }
 
   if (error) {

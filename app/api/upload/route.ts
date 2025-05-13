@@ -33,14 +33,6 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error('Error uploading file:', error)
-    // Log more details about the error
-    if (error instanceof Error) {
-      console.error('Error details:', {
-        name: error.name,
-        message: error.message,
-        stack: error.stack
-      })
-    }
     return NextResponse.json(
       { error: 'Failed to upload file' },
       { status: 500 }
