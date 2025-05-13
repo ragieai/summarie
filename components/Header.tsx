@@ -30,11 +30,11 @@ export function Header() {
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
           <Image
-            src="/ragie-logo.svg"
+            src="/ragie-logo-dark.svg"
             alt="Ragie"
-            width={72}
-            height={72}
-            className="brightness-0"
+            width={130.2}
+            height={28}
+            className="brightness-0 hover:brightness-100 transition-all"
           />
         </a>
       </div>
