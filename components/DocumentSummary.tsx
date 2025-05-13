@@ -171,9 +171,7 @@ export function DocumentSummary({ documentId }: DocumentSummaryProps) {
           <div className="mt-8">
             <h3 className="font-medium mb-4">Document Summary</h3>
             <div className="prose prose-sm dark:prose-invert max-w-none">
-              <p className="text-muted-foreground">
               <Markdown>{document.summary}</Markdown>
-              </p>
             </div>
             <div className="mt-8">
               <ChatCTA />
