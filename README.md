@@ -2,6 +2,8 @@
 
 Summarie is an open-source reference application that demonstrates how to easily integrate Ragie for document ingestion and summarization.
 
+![Screenshot](./public/summarie_home.png)
+
 ## Features
 
 - Document ingestion and processing
